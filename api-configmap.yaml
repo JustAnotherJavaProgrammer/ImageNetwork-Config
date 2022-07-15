@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+data:
+  SPRING_DATASOURCE_URL: jdbc:postgresql://postgres-service:5432/imagenetwork?stringtype=unspecified
+  SPRING_DATASOURCE_USERNAME: postgres
+  SPRING_DATASOURCE_PASSWORD: test
+  SPRING_JPA_HIBERNATE_DDL_AUTO: validate
+  SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.PostgreSQLDialect
